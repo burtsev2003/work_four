@@ -1,0 +1,65 @@
+.page__footer {
+  padding: 16px 16px 19px;
+
+  @media (min-width: $breakpoint_sm) {
+    padding: 32px 24px 41px;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    padding: 32px 31px 21px;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    grid-column: 2;
+  }
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: $second-color;
+  opacity: 0.72;
+  background-color: $main-bg;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: $seventh-bg;
+  }
+
+  &__list {
+    display: grid;
+    gap: 16px;
+
+    @media (min-width: $breakpoint_sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__copyright {
+    @media (min-width: $breakpoint_sm) {
+      text-align: left;
+    }
+  }
+
+  &__politics {
+    cursor: pointer;
+  }
+
+  &__info {
+    cursor: pointer;
+
+    @media (min-width: $breakpoint_sm) {
+      display: block;
+      text-align: right;
+    }
+  }
+}

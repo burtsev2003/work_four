@@ -1,0 +1,128 @@
+.page__main {
+  margin-bottom: 40px;
+
+  @media (min-width: $breakpoint_sm) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    grid-column: 2;
+  }
+}
+
+.main__services {
+  position: relative;
+  padding: 0 16px;
+
+  @media (min-width: $breakpoint_sm) {
+    position: relative;
+    padding: 0 24px;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    padding: 42px 32px 0;
+  }
+}
+
+.services {
+  font-family: $default-font;
+  color: $main-color;
+  background-color: $main-bg;
+
+  &__header {
+    padding: 24px 0;
+
+    @media (min-width: $breakpoint_xl) {
+      padding: 24px 0 32px;
+    }
+
+    @media (min-width: $breakpoint_xl) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-right: -10px;
+      margin-bottom: 8px;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    @media (min-width: $breakpoint_md) {
+      margin: 0;
+
+      &::before {
+        left: -30px;
+      }
+    }
+  }
+
+  &__list {
+    @media (min-width: $breakpoint_sm) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $breakpoint_md) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__status {
+    &::before {
+      @media (min-width: $breakpoint_md) {
+        content: none;
+      }
+    }
+  }
+}
+
+.status {
+  @media (min-width: $breakpoint_xl) {
+    .status {
+      display: flex;
+    }
+  }
+
+  &__button--services {
+    background-color: $transparent-bg;
+    border-radius: 5px;
+  }
+
+  &__button--services:hover {
+    background-color: transparent;
+  }
+
+  &__button--services:hover &__img-services {
+    background-color: $buttons-focus;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $main-color;
+
+    @media (min-width: $breakpoint_md) {
+      margin-right: 8px;
+      text-align: right;
+    }
+  }
+
+  &__img-services {
+    border-radius: 50%;
+    background-color: $buttons-bg;
+    transition: transform 0.1s ease-in-out, background-color 0.34s ease-in-out;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: $breakpoint_xl) {
+      display: flex;
+    }
+  }
+}

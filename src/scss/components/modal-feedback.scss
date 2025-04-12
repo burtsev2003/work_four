@@ -1,0 +1,57 @@
+.page__modal-feedback {
+  @extend %modal-position;
+  width: 100vw;
+}
+
+.modal-feedback {
+  @extend %modal-container;
+
+  &--active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__button-close {
+    margin-bottom: 40px;
+
+    @media (min-width: $breakpoint_sm) {
+      position: absolute;
+      top: 32px;
+      left: -73px;
+    }
+  }
+
+  &__title {
+    @extend %modal-title;
+  }
+}
+
+.form-feedback {
+  transition: all 0.34s ease-in-out;
+
+  &__input {
+    @extend %modal-input;
+
+    &--textarea {
+      min-height: 118px;
+      resize: none;
+    }
+  }
+
+  &__text {
+    @extend %modal-text;
+  }
+
+  &__link {
+    color: $buttons-bg;
+  }
+
+  &__button {
+    @extend %modal-and-price-button;
+
+    margin-left: auto;
+    border-radius: 16px;
+    padding: 4px 18px;
+    width: 136px;
+  }
+}

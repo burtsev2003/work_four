@@ -1,0 +1,56 @@
+.page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  font-family: $default-font;
+  color: $main-color;
+  background-color: $second-bg;
+
+  @media (min-width: $breakpoint_sm) {
+    padding: 18px 24px;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    display: none;
+  }
+}
+
+.header__feedback {
+  @media (min-width: $breakpoint_sm) {
+    & {
+      display: flex;
+    }
+  }
+}
+
+.feedback__contacts {
+  @media (min-width: $breakpoint_sm) {
+    & {
+      display: flex;
+      gap: 16px;
+      margin-right: 22px;
+    }
+  }
+}
+
+.feedback__status {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background-color: $fourth-bg;
+  }
+}
+
+.status {
+  position: relative;
+  display: flex;
+  min-width: 116px;
+  gap: 16px;
+  justify-content: right;
+}

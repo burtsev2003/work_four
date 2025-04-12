@@ -1,0 +1,42 @@
+$default-font: 'TT Lakes', sans-serif;
+
+$main-color: #1b1c21;
+$second-color: #7e7e82;
+$main-bg: #f8f8f8;
+$second-bg: #ffffff;
+$third-bg: #41f6d7;
+$fourth-bg: #eaeaea;
+$fifth-bg: #dddddd;
+$sixth-bg: #b5b6bc;
+$seventh-bg: #d9fff5;
+$overlay-bg: rgba(255, 255, 255, 0.9);
+$aside-shadow-bg: rgba(14, 24, 80, 0.2);
+$transparent-bg: transparent;
+$active-tab-border: #b8ffec;
+$buttons-bg: #ff3e79;
+$buttons-focus: #b4278e;
+$burger-line: #ffffff;
+$burger-line-focus: #b4278e;
+$burger-background: #ff3e79;
+$burger-line-active: transparent;
+
+$breakpoint_xs: 360px;
+$breakpoint_xm: 440px;
+$breakpoint_sm: 576px;
+$breakpoint_smd: 768px;
+$breakpoint_md: 992px;
+$breakpoint_mdm: 1120px;
+$breakpoint_xl: 1300px;
+$breakpoint_xlx: 1366px;
+
+@media (min-width: $breakpoint_sm) {
+}
+
+@media (min-width: $breakpoint_xm) {
+}
+
+@media (min-width: $breakpoint_md) {
+}
+
+@media (min-width: $breakpoint_xl) {
+}

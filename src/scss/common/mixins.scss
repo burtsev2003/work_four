@@ -1,0 +1,10 @@
+@mixin my-mixin($color, $height) {
+  color: $color;
+  height: $height;
+}
+@mixin my-mixin2($color, $height) {
+  color: $color;
+  height: $height;
+
+  @extend %flex-center;
+}
